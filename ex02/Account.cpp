@@ -6,7 +6,7 @@
 /*   By: fgeslin <fgeslin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 14:54:50 by fgeslin           #+#    #+#             */
-/*   Updated: 2023/04/05 15:54:50 by fgeslin          ###   ########.fr       */
+/*   Updated: 2023/04/05 16:06:47 by fgeslin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,15 @@ void	Account::displayAccountsInfos( void ){
 }
 
 void	Account::_displayTimestamp( void ){
-	// std::cout << std::time(0);
-	std::cout << "[19920104_091532] ";
+	time_t		t;
+	struct tm	*t_info;
+	char		buf[19];
+
+	t = time(0);
+	t_info = localtime(&t);
+	strftime(buf, 19, "[%Y%m%d_%H%M%S] ", t_info);
+	std::cout << buf;
+	// std::cout << "[19920104_091532] ";
 }
 
 Account::Account( int initial_deposit ){
