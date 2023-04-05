@@ -6,7 +6,7 @@
 #    By: fgeslin <fgeslin@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/31 13:26:56 by fgeslin           #+#    #+#              #
-#    Updated: 2023/03/28 10:37:28 by fgeslin          ###   ########.fr        #
+#    Updated: 2023/03/28 12:28:34 by fgeslin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,9 +17,9 @@ RM			:= rm -f
 CFLAGS		= -Wall -Wextra -Werror -std=c++98
 
 #####	SOURCES		############################################################
-SRC			=	main.cpp /
-				contact.cpp /
-				phonebook.cpp
+SRC			=	main.cpp \
+				phonebook.cpp \
+				contact.cpp
 OBJ			=	$(SRC:.cpp=.o)
 
 #####	Makefile  objs		###################################################

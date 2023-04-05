@@ -6,23 +6,30 @@
 /*   By: fgeslin <fgeslin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/27 16:19:59 by fgeslin           #+#    #+#             */
-/*   Updated: 2023/03/27 16:41:43 by fgeslin          ###   ########.fr       */
+/*   Updated: 2023/04/05 14:14:51 by fgeslin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-#include <array>
-#include "contact.hpp"
+#ifndef	PHONEBOOK_HPP
+# define PHONEBOOK_HPP
+
+# include "contact.hpp"
+# include <iostream>
 
 class Phonebook
 {
 private:
-	Contact contactList[8];
+	Contact _contacts[8];
+	int		_start;
+	int		_count;
+
 public:
-	Phonebook(Contact* contactList);
+	Phonebook();
 	~Phonebook();
 
 	void	add();
 	void	search();
-	void	exit();
+
 };
+
+#endif
