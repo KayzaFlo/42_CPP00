@@ -6,13 +6,13 @@
 #    By: fgeslin <fgeslin@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/31 13:26:56 by fgeslin           #+#    #+#              #
-#    Updated: 2023/03/28 12:28:34 by fgeslin          ###   ########.fr        #
+#    Updated: 2023/04/07 12:53:24 by fgeslin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #####	CONFIG		############################################################
 NAME		:= phonebook
-CC			:= clang++
+CC			:= c++
 RM			:= rm -f
 CFLAGS		= -Wall -Wextra -Werror -std=c++98
 
